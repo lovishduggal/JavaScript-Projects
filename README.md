@@ -3,8 +3,8 @@ These projects were made while learning javaScript
 
 Concepts required to these Projects :
 
-In HTML5 we use Basic semantics tags.
-In CSS we use basic properties.
+In HTML5 we use Basic semantics tags. <br>
+In CSS we use basic properties. <br>
 In javaScript we use vanilla JavaScript.
 <br>
 
