@@ -1,7 +1,7 @@
 # Vanilla-JavaScript-Projects
 These projects were made while learning javaScript
 
-Concepts required to these Projects :
+Concepts required to make these Projects :
 
 In HTML5 we use Basic semantics tags. <br>
 In CSS we use basic properties. <br>
