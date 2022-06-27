@@ -7,7 +7,8 @@ In HTML5 we use Basic semantics tags.
 In CSS we use basic properties.
 In javaScript we use vanilla JavaScript.
 <br>
-https://gorgeous-stardust-be652b.netlify.app/
+
+Live-links of Projects:
 
 colorFlipper : https://thunderous-gumdrop-39dfb2.netlify.app/
 <br>
