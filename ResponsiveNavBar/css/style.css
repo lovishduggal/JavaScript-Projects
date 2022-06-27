@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+:root {
+  --primary: #ff6622;
+  --bg: #3f4372;
+  --color: #747496;
+  --lightgrey: #efedff;
+  --grey: rgb(159, 159, 159);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--bg);
+}
+header {
+  padding-bottom: 10rem;
+}
+.container {
+  width: 1152px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.left,
+.right {
+  padding: 1rem 0;
+}
+strong {
+  color: var(--primary);
+}
+img {
+  width: 30px;
+  height: auto;
+  margin-right: 1rem;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+span {
+  display: inline-block;
+  font-size: 1.3rem;
+  color: var(--lightgrey);
+}
+.navList {
+  display: flex;
+  align-items: center;
+}
+.navList li {
+  list-style: none;
+  margin-left: 2rem;
+  position: relative;
+}
+nav .dropDown {
+  position: absolute;
+  width: max-content;
+  background: var(--lightgrey);
+  padding: 0 0.5rem;
+  left: 50%;
+  border-radius: 4px;
+  transform: translateX(-72px);
+  display: none;
+  z-index: 9999;
+}
+.navList li:hover .dropDown {
+  display: block;
+  animation: drop 0.5s ease-in-out forwards;
+}
+nav .dropDown li {
+  margin: 0;
+  margin: 1rem 0;
+}
+nav .dropDown li a {
+  color: var(--grey);
+  font-weight: 400;
+}
+.navList li a {
+  text-decoration: none;
+  color: var(--lightgrey);
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.navList li a:hover {
+  color: var(--primary);
+}
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: 1px solid transparent;
+  background: var(--primary);
+  color: var(--lightgrey);
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  border-color: var(--lightgrey);
+  background: transparent;
+}
+@keyframes drop {
+  0% {
+    transform: translateX(-50%) translateY(0.8rem);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0rem);
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  color: var(--primary);
+}
+.content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: var(--lightgrey);
+}
+.content .social-links {
+  font-size: 2rem;
+}
+.content .social-links a {
+  display: inline-block;
+  color: var(--primary);
+  margin-right: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.content .social-links .twitter:hover {
+  color: skyblue;
+}
+.content .social-links .github:hover {
+  color: #111;
+}
+.responsive {
+  transition: reponsive 1s ease-in-out;
+}
+.responsive .left {
+  position: relative;
+  z-index: 999;
+}
+.responsive .nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.hamburger {
+  z-index: 999;
+  cursor: pointer;
+}
+.responsive .hamburger span {
+  width: 2rem;
+  height: 0.2rem;
+  background: var(--lightgrey);
+  display: block;
+  margin-bottom: 0.3rem;
+  border-radius: 2px;
+  transform-origin: left;
+  transition: all 0.2s ease-in-out;
+}
+.responsive .navList {
+  background-image: linear-gradient(45deg, #ff6622, #7b4586, #3f4372);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 8rem;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: auto;
+  margin: 0;
+}
+.responsive .open {
+  opacity: 0;
+  pointer-events: none;
+}
+.responsive .navList li {
+  margin-left: 0;
+
+  margin-bottom: 2rem;
+}
+.responsive .navList li a {
+  font-size: 1.5rem;
+}
+.responsive nav .dropDown {
+  background: transparent;
+  text-align: center;
+  position: relative;
+  height: max-content;
+  margin-top: 2rem;
+}
+.responsive nav .dropDown li {
+  margin: 0;
+  padding: 0.5rem 0rem;
+}
