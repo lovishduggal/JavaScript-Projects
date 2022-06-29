@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: grey;
+}
+
+main {
+  width: 300px;
+  height: 300px;
+  max-width: 90%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -150px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  background-image: linear-gradient(
+    to right top,
+    #d3d3d3,
+    #dedede,
+    #e9e9e9,
+    #f4f4f4,
+    #ffffff
+  );
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.gmail,
+.password-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 1.5rem;
+  margin-bottom: 0.1rem;
+  font-weight: 700;
+}
+input {
+  padding: 0.8rem 1rem;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid lightgrey;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.password-wrapper {
+  position: relative;
+}
+span {
+  color: grey;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translatey(-10%);
+  display: none;
+}
+
+.password-wrapper input:valid ~ span {
+  display: block;
+}
+.cta {
+  padding: 0.5rem 1.5rem;
+  align-self: flex-end;
+  margin-top: 1rem;
+  background-image: linear-gradient(
+    to left bottom,
+    #d3d3d3,
+    #dedede,
+    #e9e9e9,
+    #f4f4f4,
+    #ffffff
+  );
+  outline: none;
+  border: none;
+}
+.password-wrapper span i.show::before {
+  content: "\f070";
+}
