@@ -5,7 +5,7 @@ Concepts required to make these Projects :
 
 In HTML5 we use Basic semantics tags. <br>
 In CSS we use basic properties. <br>
-In javaScript we use vanilla JavaScript.
+In javaScript we use vanilla & ES6 JavaScript.
 <br>
 
 Live-links of Projects:
