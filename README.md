@@ -1,4 +1,4 @@
-# Vanilla-JavaScript-Projects
+# JavaScript-Projects
 These projects were made while learning javaScript
 
 Concepts required to make these Projects :
