@@ -10,6 +10,7 @@ In javaScript we use vanilla JavaScript.
 
 Live-links of Projects:
 
+
 colorFlipper : https://thunderous-gumdrop-39dfb2.netlify.app/
 <br>
 
@@ -27,4 +28,5 @@ modalPopUp : https://clinquant-taiyaki-299ab1.netlify.app/
 
 AnimationText :https://sunny-madeleine-37a472.netlify.app/
 <br>
+
 Disctionary : https://extraordinary-marzipan-8fd4e7.netlify.app/
